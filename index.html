@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/modern-normalize@1.1.0/modern-normalize.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script> 
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  </script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Brandon Leichty</h1>
+  </div>
+  <button class="btn-toggle">Change Theme</button>
+  <script src="index.js"></script>
+</body>
+</html>
